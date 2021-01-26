@@ -23,7 +23,7 @@ RewriteRule ^([^/.]+)$ $1.php [L]
 
 RewriteCond %{REQUEST_URI} !\.php [NC]
 RewriteRule ^edit/([\d]+) post-edit.php?id=$1 [L,NC]
-RewriteRule ^post/([\d]+) post-view.php?id=$1 [L,NC]
+RewriteRule ^view/([\d]+) post-view.php?id=$1 [L,NC]
 RewriteRule ^category/([\d]+) category2.php?category=$1 [L,NC]
 RewriteRule ^result/([\d]+) result.php?title=$1 [L,NC]
 

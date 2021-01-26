@@ -37,7 +37,7 @@
                         <a href="edit/<?php echo $row['id'] ?>/<?php echo $row['url'] ?>">Update</a>
                         <a href="proses_barang.php?action=delete&id=<?php echo $row['uid']; ?>" onclick="return confirm('Are you sure?')">Delete</a>
                         <a href="proses_barang.php?action=revoke">Revoke</a>
-                        <a href="post/<?php echo $row['id'] ?>/<?php echo $row['url'] ?>">View Post</a>
+                        <a href="view/<?php echo $row['id'] ?>/<?php echo $row['url'] ?>">View Post</a>
                     </td>
                 </tr>
                 <?php

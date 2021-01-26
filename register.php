@@ -71,18 +71,18 @@
 	<?php
 	unset($_SESSION['message']);
 	}
-?> 
+?>
 
 
-    
 
-		<!-- Begin page content -->
+
+<!-- Begin page content -->
 <main role="main" class="flex-shrink-0 mb-2" >
 
-	<?php 
+    <?php
     $c = substr(number_format(time() * rand(),0,'',''),0,10);
-	echo $c ?>
-	<div class="container">
+    echo $c ?>
+    <div class="container">
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-7">
