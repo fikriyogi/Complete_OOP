@@ -30,7 +30,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="<?php echo strip_tags(substr($r_user['description'], 0,200), ENT_QUOTES);?>">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Fikri Yogi v3.8.5">
     <title><?php echo $r_user['title']; ?></title>

@@ -97,6 +97,7 @@ if (!is_null($id)) {
         ],
         browser_spellcheck: true,
         contextmenu: false,
+        height: 300
     });
 </script>
 </body>

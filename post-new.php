@@ -25,6 +25,11 @@
 			<div class="col-md-4">
 
 				<div class="form-group">
+					<label for="kategori">Author</label>
+					<input type="hidden"  class="form-control" name="author" value="<?php echo $r_user['uid']?>" readonly="">
+					<input type="text"  class="form-control"  value="<?php echo $r_user['username']?>" readonly="">
+				</div>
+				<div class="form-group">
 					<label for="kategori">Status</label>
 					<select id="kategori" class="form-control">
 						<option>Pilih</option>
@@ -35,6 +40,15 @@
 					<select id="kategori" class="form-control">
 						<option>Pilih</option>
 					</select>
+				</div>
+				<div class="form-group">
+					<label for="kategori">Publish Date</label>
+					<input type="date"  class="form-control" name="post_date">
+				</div>
+
+				<div class="form-group">
+					<label for="kategori">Metadata</label>
+					<input type="date"  class="form-control" name="metadata">
 				</div>
 				<div class="form-group">
 					<label>Featured Image</label>
@@ -60,15 +74,16 @@
   plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
   toolbar: "code preview | undo redo | formatselect | fontselect | fontsizeselect | bold italic underline strikethrough backcolor | subscript superscript | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | paste searchreplace | toc link image media charmap insertdatetime emoticons hr | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol | removeformat",
   insertdatetime_element: true,
-   media_scripts: [
-   {filter: 'platform.twitter.com'},
-   {filter: 's.imgur.com'},
-   {filter: 'instagram.com'},
-   {filter: 'https://platform.twitter.com/widgets.js'},
- ],
-   browser_spellcheck: true,
-   contextmenu: false,
-});
+	   media_scripts: [
+	   {filter: 'platform.twitter.com'},
+	   {filter: 's.imgur.com'},
+	   {filter: 'instagram.com'},
+	   {filter: 'https://platform.twitter.com/widgets.js'},
+	 ],
+	   browser_spellcheck: true,
+	   contextmenu: false,
+	});
+
   </script>
 </body>
 </html>

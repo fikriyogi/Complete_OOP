@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/fb_clone</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="my_oop@localhost" uuid="8dd8ceee-f57b-4ea8-a827-dbadf86fa54f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/my_oop</jdbc-url>
+    </data-source>
   </component>
 </project>

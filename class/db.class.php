@@ -167,6 +167,9 @@ class database{
 	function update_data($userMail,$userName,$userOnline,$level,$Sid)
 	{
 		$query = mysqli_query($this->koneksi,"UPDATE post SET title='$userMail',description='$userName',is_active='$userOnline',category='$level' WHERE id='$Sid'");
+		echo "<script type=text/javascript>
+		              alert('Update Successfully');
+		              window.location = 'settings.php?tab=general'</script>";
 	}
 
 	function delete_data($Sid)

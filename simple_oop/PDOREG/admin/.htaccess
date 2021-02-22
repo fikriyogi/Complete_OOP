@@ -1,0 +1,35 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
+
+RewriteRule ^post/([a-zA-Z0-9-/]+)$ pages.php?page_id=$1  
+RewriteRule ^pages/([^/\.]+)/?$ pages.php?page_id=$1 [L]
+
+
+
+# Unless directory, remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([^/]+)/$ http://example.com/folder/$1 [R=301,L]
+
+# Redirect external .php requests to extensionless URL
+RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
+#RewriteRule ^(.+)\.php$ http://example.com/folder/$1 [R=301,L]
+
+# Resolve .php file for extensionless PHP URLs
+RewriteRule ^([^/.]+)$ $1.php [L]
+
+RewriteCond %{REQUEST_URI} !\.php [NC]
+RewriteRule ^edit/([\d]+) post-edit.php?id=$1 [L,NC]
+RewriteRule ^view/([\d]+) view.php?id=$1 [L,NC]
+RewriteRule ^download/([\d]+) playstoreclone-download.php?id=$1 [L,NC]
+RewriteRule ^category/([\d]+) category2.php?category=$1 [L,NC]
+RewriteRule ^result/([\d]+) result.php?title=$1 [L,NC]
+RewriteRule ^update/([\d]+) update.php?id=$1 [L,NC]
+
+
+
+#error page
+ErrorDocument 404 /error/404.html

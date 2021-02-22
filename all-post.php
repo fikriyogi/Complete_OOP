@@ -30,7 +30,7 @@
                     <td><?php echo $no++; ?></td>
                     <td><a href="edit/<?php echo $row['id'] ?>/<?php echo $row['url'] ?>"><?php echo $row['title']; ?></a></td>
                     <td><?php echo strip_tags(substr($row['description'], 0,200), ENT_QUOTES);?>...</td>
-                    <td><?php echo $row['is_active']; ?></td>
+                    <td><img src="<?php echo FEAT_IMG ?><?php echo $row['feat_image'];?>"></td>
                     <td><?php if($row['permissions']=='1') { echo 'Admin'; } ?></td>
                     <td><?php echo ($row['is_online']==1 ? 'Online' : 'Offline'); ?></td>
                     <td>
